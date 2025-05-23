@@ -1,0 +1,27 @@
+abstract class Piece{
+  boolean isWhite; 
+  int value;
+  ArrayList<int[]> legalMoves; 
+  Piece(boolean isWhite, int value){
+    this.isWhite = isWhite;
+    this.value = value;
+  }
+  
+  
+  abstract void take();
+  
+  void move(int[] go){
+    if(isLegal(go)){
+      
+    }
+  }  
+  
+  boolean isLegal(int[] go){
+    return legalMoves().contains(go);
+  }
+  
+ ArrayList<int[]> legalMoves(){
+   return legalMoves;
+ }
+    
+}
