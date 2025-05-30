@@ -1,0 +1,4 @@
+interface Displayables{
+
+  void display();
+}
